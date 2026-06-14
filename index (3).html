@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Learning Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MAIN PAGE -->
+<div id="page-main" class="page active">
+  <header class="hero">
+    <div class="hero-content">
+      <div class="teacher-gif-wrap">
+        <div class="cartoon-teacher">
+          <!-- Body -->
+          <div class="ct-body">
+            <!-- Head -->
+            <div class="ct-head">
+              <div class="ct-hair"></div>
+              <div class="ct-face">
+                <div class="ct-eye left"></div>
+                <div class="ct-eye right"></div>
+                <div class="ct-smile"></div>
+                <div class="ct-blush left"></div>
+                <div class="ct-blush right"></div>
+              </div>
+            </div>
+            <!-- Torso -->
+            <div class="ct-torso">
+              <div class="ct-collar"></div>
+              <div class="ct-arm left"></div>
+              <div class="ct-arm right waving"></div>
+            </div>
+            <!-- Legs -->
+            <div class="ct-legs">
+              <div class="ct-leg left"></div>
+              <div class="ct-leg right"></div>
+            </div>
+          </div>
+          <!-- Blackboard behind -->
+          <div class="ct-board">
+            <span>Hello!</span>
+            <span>Welcome! 👋</span>
+          </div>
+        </div>
+        <div class="speech-bubble">Good morning, class! Let's learn! ✨</div>
+      </div>
+      <div class="hero-badge">✦ Ms. Tursynova's Class</div>
+      <h1>English Learning Hub</h1>
+      <p class="hero-sub">Practice vocabulary, sharpen your writing, and grow your English skills — one lesson at a time.</p>
+      <div class="nav-cards">
+        <button class="nav-card" onclick="showPage('page-vocabulary')">
+          <span class="nav-icon">📚</span>
+          <span class="nav-label">Vocabulary</span>
+          <span class="nav-desc">10 modules to master new words</span>
+        </button>
+        <button class="nav-card" onclick="showPage('page-writing')">
+          <span class="nav-icon">✍️</span>
+          <span class="nav-label">Creative Writing</span>
+          <span class="nav-desc">Express yourself through essays</span>
+        </button>
+        <button class="nav-card" onclick="showPage('page-tips')">
+          <span class="nav-icon">💡</span>
+          <span class="nav-label">Writing Tips</span>
+          <span class="nav-desc">Guides to improve your writing</span>
+        </button>
+      </div>
+    </div>
+    <div class="hero-deco"></div>
+  </header>
+</div>
+
+<!-- VOCABULARY PAGE -->
+<div id="page-vocabulary" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-main')">← Back</button>
+    <h2>Vocabulary Modules</h2>
+    <p>Choose a module to practice new words and test your knowledge.</p>
+  </div>
+  <div class="modules-grid" id="vocab-modules-grid">
+    <!-- Modules 1-3, 6-10 are placeholder -->
+  </div>
+</div>
+
+<!-- WRITING PAGE -->
+<div id="page-writing" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-main')">← Back</button>
+    <h2>Creative Writing Modules</h2>
+    <p>Practice your writing skills through guided tasks and creative challenges.</p>
+  </div>
+  <div class="modules-grid" id="writing-modules-grid"></div>
+</div>
+
+<!-- TIPS PAGE -->
+<div id="page-tips" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-main')">← Back</button>
+    <h2>Writing Tips</h2>
+    <p>Essential guides to help you write better essays and express your ideas clearly.</p>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tip-icon">🧱</div>
+      <h3>Essay Structure</h3>
+      <ul>
+        <li><strong>Introduction:</strong> Hook → Background → Thesis</li>
+        <li><strong>Body Paragraph 1:</strong> Topic sentence → Evidence → Explanation</li>
+        <li><strong>Body Paragraph 2:</strong> New point → Support → Link</li>
+        <li><strong>Conclusion:</strong> Restate thesis → Summary → Final thought</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🔗</div>
+      <h3>Linking Words</h3>
+      <ul>
+        <li><strong>Adding:</strong> Furthermore, In addition, Moreover</li>
+        <li><strong>Contrasting:</strong> However, On the other hand, Although</li>
+        <li><strong>Concluding:</strong> In conclusion, To sum up, Overall</li>
+        <li><strong>Example:</strong> For instance, For example, Such as</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">✅</div>
+      <h3>Writing Checklist</h3>
+      <ul>
+        <li>Did you write a clear thesis statement?</li>
+        <li>Does each paragraph have one main idea?</li>
+        <li>Did you use linking words to connect ideas?</li>
+        <li>Did you check your grammar and spelling?</li>
+        <li>Is your conclusion different from the introduction?</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">📝</div>
+      <h3>Useful Phrases</h3>
+      <ul>
+        <li><em>"In my opinion, …"</em></li>
+        <li><em>"It is widely believed that …"</em></li>
+        <li><em>"This shows that …"</em></li>
+        <li><em>"To illustrate this point, …"</em></li>
+        <li><em>"Taking everything into account, …"</em></li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">⏳</div>
+      <h3>Using Tenses</h3>
+      <ul>
+        <li><strong>Present Simple:</strong> facts & habits — "Water boils at 100°C"</li>
+        <li><strong>Present Continuous:</strong> now — "I am writing an essay"</li>
+        <li><strong>Past Simple:</strong> completed — "They invented the sundial"</li>
+        <li><strong>Passive Voice:</strong> processes — "The clock was used to track time"</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon">🌟</div>
+      <h3>Common Mistakes to Avoid</h3>
+      <ul>
+        <li>❌ Don't start sentences with "Because"</li>
+        <li>❌ Don't repeat the same word too often</li>
+        <li>❌ Don't mix past and present tenses</li>
+        <li>✅ Use synonyms to vary your vocabulary</li>
+        <li>✅ Read your essay aloud before submitting</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- VOCAB MODULE 4 -->
+<div id="page-vocab-4" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-vocabulary')">← Modules</button>
+    <h2>Module 4 — Educational Systems</h2>
+    <p>Vocabulary from the lesson on 01 April</p>
+  </div>
+  <div class="module-section">
+    <h3 class="section-title">📖 Word List</h3>
+    <div class="wordlist-grid" id="wordlist-4"></div>
+  </div>
+  <div class="module-section">
+    <h3 class="section-title">🎮 Flashcard Practice</h3>
+    <div class="flashcard-area" id="flashcard-4">
+      <div class="flashcard" id="fc4" onclick="flipCard('fc4')">
+        <div class="fc-front" id="fc4-front"></div>
+        <div class="fc-back" id="fc4-back"></div>
+      </div>
+      <div class="fc-controls">
+        <button onclick="prevCard('vocab4')">← Prev</button>
+        <span id="fc4-counter"></span>
+        <button onclick="nextCard('vocab4')">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VOCAB MODULE 5 -->
+<div id="page-vocab-5" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-vocabulary')">← Modules</button>
+    <h2>Module 5 — The World of Work</h2>
+    <p>Vocabulary from Lessons 3 and 4</p>
+  </div>
+  <div class="module-section">
+    <h3 class="section-title">📖 Word List</h3>
+    <div class="wordlist-grid" id="wordlist-5"></div>
+  </div>
+  <div class="module-section">
+    <h3 class="section-title">🎮 Flashcard Practice</h3>
+    <div class="flashcard-area">
+      <div class="flashcard" id="fc5" onclick="flipCard('fc5')">
+        <div class="fc-front" id="fc5-front"></div>
+        <div class="fc-back" id="fc5-back"></div>
+      </div>
+      <div class="fc-controls">
+        <button onclick="prevCard('vocab5')">← Prev</button>
+        <span id="fc5-counter"></span>
+        <button onclick="nextCard('vocab5')">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WRITING MODULE 4 -->
+<div id="page-writing-4" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-writing')">← Modules</button>
+    <h2>Module 4 — Timekeeping Through History</h2>
+    <p>Vocabulary quiz, true/false, and creative essay writing</p>
+  </div>
+
+  <!-- Step indicators -->
+  <div class="steps-bar">
+    <div class="step active" id="w4-step1-dot">1 Vocabulary</div>
+    <div class="step-line"></div>
+    <div class="step" id="w4-step2-dot">2 True/False</div>
+    <div class="step-line"></div>
+    <div class="step" id="w4-step3-dot">3 Essay</div>
+  </div>
+
+  <!-- Step 1: Multiple Choice -->
+  <div id="w4-step1" class="step-content">
+    <h3>Multiple Choice — Choose the correct answer</h3>
+    <div id="w4-mc-area"></div>
+    <button class="btn-primary" onclick="checkMC('w4', 'w4-step2')">Check Answers →</button>
+    <div id="w4-mc-result" class="result-msg"></div>
+  </div>
+
+  <!-- Step 2: True/False -->
+  <div id="w4-step2" class="step-content hidden">
+    <h3>True or False?</h3>
+    <div id="w4-tf-area"></div>
+    <button class="btn-primary" onclick="checkTF('w4', 'w4-step3')">Check Answers →</button>
+    <div id="w4-tf-result" class="result-msg"></div>
+  </div>
+
+  <!-- Step 3: Creative Essay -->
+  <div id="w4-step3" class="step-content hidden">
+    <div class="essay-prompt-box">
+      <div class="essay-prompt-icon">⏰</div>
+      <h3>Time Traveler's Essay Challenge</h3>
+      <p>You are a time traveler who has just arrived in Ancient Egypt. You discover a <strong>sundial</strong> and a <strong>clepsydra</strong> (water clock). Write a creative essay describing:</p>
+      <ul>
+        <li>What timekeeping devices you found and how they work</li>
+        <li>How they compare to modern clocks</li>
+        <li>What you think about how humans have measured time through history</li>
+      </ul>
+      <p class="essay-hint">💡 Use vocabulary from this module. Try to write at least 150 words.</p>
+    </div>
+    <div class="essay-meta-row">
+      <input type="text" id="w4-student-name" placeholder="Your name" class="name-input">
+    </div>
+    <textarea id="w4-essay" class="essay-box" placeholder="Begin your essay here... 
+
+For example: 'As I stepped out of my time machine into the blazing Egyptian sun, I noticed a tall stone structure casting a long shadow across the sand...'"></textarea>
+    <div class="word-count" id="w4-wc">Words: 0</div>
+    <button class="btn-submit" onclick="submitEssay('w4-essay','w4-student-name','Module 4 — Timekeeping Essay')">📤 Submit Essay</button>
+    <div id="w4-submit-msg" class="submit-msg"></div>
+  </div>
+</div>
+
+<!-- WRITING MODULE 5 -->
+<div id="page-writing-5" class="page">
+  <div class="page-header">
+    <button class="back-btn" onclick="showPage('page-writing')">← Modules</button>
+    <h2>Module 5 — The World of Work</h2>
+    <p>Two lessons: profession essay + resume builder</p>
+  </div>
+
+  <div class="lesson-tabs">
+    <button class="lesson-tab active" onclick="switchLesson(1)" id="ltab1">Lesson 1: Professions</button>
+    <button class="lesson-tab" onclick="switchLesson(2)" id="ltab2">Lesson 2: Resume Builder</button>
+  </div>
+
+  <!-- LESSON 1 -->
+  <div id="w5-lesson1">
+    <div class="steps-bar">
+      <div class="step active" id="w5l1-step1-dot">1 Vocabulary</div>
+      <div class="step-line"></div>
+      <div class="step" id="w5l1-step2-dot">2 True/False</div>
+      <div class="step-line"></div>
+      <div class="step" id="w5l1-step3-dot">3 Essay</div>
+    </div>
+
+    <div id="w5l1-step1" class="step-content">
+      <h3>Multiple Choice — Worker Types</h3>
+      <div id="w5l1-mc-area"></div>
+      <button class="btn-primary" onclick="checkMC('w5l1', 'w5l1-step2')">Check Answers →</button>
+      <div id="w5l1-mc-result" class="result-msg"></div>
+    </div>
+
+    <div id="w5l1-step2" class="step-content hidden">
+      <h3>True or False?</h3>
+      <div id="w5l1-tf-area"></div>
+      <button class="btn-primary" onclick="checkTF('w5l1', 'w5l1-step3')">Check Answers →</button>
+      <div id="w5l1-tf-result" class="result-msg"></div>
+    </div>
+
+    <div id="w5l1-step3" class="step-content hidden">
+      <div class="essay-prompt-box">
+        <div class="essay-prompt-icon">💼</div>
+        <h3>Profession Essay Challenge</h3>
+        <p>You have been randomly assigned <strong>two professions</strong> to write about. Compare them!</p>
+        <div id="w5-professions-display" class="professions-display"></div>
+        <button class="btn-secondary" onclick="generateProfessions()">🎲 Get New Professions</button>
+        <div style="margin-top:1rem;">
+          <p>Write an essay that:</p>
+          <ul>
+            <li>Describes both professions using the vocabulary words</li>
+            <li>Compares their advantages and disadvantages</li>
+            <li>States which job you would prefer and why</li>
+          </ul>
+          <p class="essay-hint">💡 Use words like: hazardous, rewarding, stimulating, demanding, stressful...</p>
+        </div>
+      </div>
+      <div class="essay-meta-row">
+        <input type="text" id="w5l1-student-name" placeholder="Your name" class="name-input">
+      </div>
+      <textarea id="w5l1-essay" class="essay-box" placeholder="Start your essay here..."></textarea>
+      <div class="word-count" id="w5l1-wc">Words: 0</div>
+      <button class="btn-submit" onclick="submitEssay('w5l1-essay','w5l1-student-name','Module 5 Lesson 1 — Professions Essay')">📤 Submit Essay</button>
+      <div id="w5l1-submit-msg" class="submit-msg"></div>
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div id="w5-lesson2" class="hidden">
+    <div class="steps-bar">
+      <div class="step active" id="w5l2-step1-dot">1 Vocabulary</div>
+      <div class="step-line"></div>
+      <div class="step" id="w5l2-step2-dot">2 True/False</div>
+      <div class="step-line"></div>
+      <div class="step" id="w5l2-step3-dot">3 Resume</div>
+    </div>
+
+    <div id="w5l2-step1" class="step-content">
+      <h3>Multiple Choice — Job Qualities</h3>
+      <div id="w5l2-mc-area"></div>
+      <button class="btn-primary" onclick="checkMC('w5l2', 'w5l2-step2')">Check Answers →</button>
+      <div id="w5l2-mc-result" class="result-msg"></div>
+    </div>
+
+    <div id="w5l2-step2" class="step-content hidden">
+      <h3>True or False?</h3>
+      <div id="w5l2-tf-area"></div>
+      <button class="btn-primary" onclick="checkTF('w5l2', 'w5l2-step3')">Check Answers →</button>
+      <div id="w5l2-tf-result" class="result-msg"></div>
+    </div>
+
+    <div id="w5l2-step3" class="step-content hidden">
+      <div class="resume-wrapper">
+        <div class="resume-header-bar">
+          <h3>📄 Build Your Resume</h3>
+          <p>Fill in each section as if you are applying for your dream job.</p>
+        </div>
+        <div class="resume-form">
+          <div class="resume-section-title">👤 Personal Information</div>
+          <div class="resume-row">
+            <div class="resume-field">
+              <label>Full Name</label>
+              <input type="text" id="r-name" placeholder="e.g. Aizat Bekova">
+            </div>
+            <div class="resume-field">
+              <label>Age</label>
+              <input type="text" id="r-age" placeholder="e.g. 18">
+            </div>
+          </div>
+          <div class="resume-row">
+            <div class="resume-field">
+              <label>City</label>
+              <input type="text" id="r-city" placeholder="e.g. Semey">
+            </div>
+            <div class="resume-field">
+              <label>Email</label>
+              <input type="text" id="r-email" placeholder="e.g. aizat@email.com">
+            </div>
+          </div>
+
+          <div class="resume-section-title">🎯 Job You Are Applying For</div>
+          <input type="text" id="r-job" placeholder="e.g. Software Developer" class="resume-full-input">
+
+          <div class="resume-section-title">✨ About Me — Personality</div>
+          <p class="resume-hint">Describe your personality in 2–3 sentences. Use words like: responsible, creative, motivated, adaptable, communicative...</p>
+          <textarea id="r-personality" class="resume-textarea" placeholder="e.g. I am a highly motivated and creative person who enjoys solving problems. I work well in teams and I am always eager to learn new skills..."></textarea>
+
+          <div class="resume-section-title">🎓 Education</div>
+          <div class="resume-row">
+            <div class="resume-field">
+              <label>School / College</label>
+              <input type="text" id="r-school" placeholder="e.g. Auezov Pedagogical College">
+            </div>
+            <div class="resume-field">
+              <label>Years</label>
+              <input type="text" id="r-years" placeholder="e.g. 2023 – 2026">
+            </div>
+          </div>
+          <div class="resume-field">
+            <label>Specialty / Subject</label>
+            <input type="text" id="r-specialty" placeholder="e.g. Foreign Language Teaching">
+          </div>
+
+          <div class="resume-section-title">💪 Skills</div>
+          <p class="resume-hint">List 3–5 skills relevant to the job. Use job quality vocabulary!</p>
+          <div class="skills-grid" id="skills-checkboxes">
+            <label class="skill-check"><input type="checkbox" value="teamwork"> Teamwork</label>
+            <label class="skill-check"><input type="checkbox" value="communication"> Communication</label>
+            <label class="skill-check"><input type="checkbox" value="time management"> Time management</label>
+            <label class="skill-check"><input type="checkbox" value="leadership"> Leadership</label>
+            <label class="skill-check"><input type="checkbox" value="creativity"> Creativity</label>
+            <label class="skill-check"><input type="checkbox" value="problem-solving"> Problem-solving</label>
+            <label class="skill-check"><input type="checkbox" value="adaptability"> Adaptability</label>
+            <label class="skill-check"><input type="checkbox" value="attention to detail"> Attention to detail</label>
+          </div>
+          <input type="text" id="r-skills-extra" placeholder="Other skills... (e.g. Python, drawing)" class="resume-full-input" style="margin-top:8px;">
+
+          <div class="resume-section-title">🌍 Languages</div>
+          <div class="resume-row">
+            <div class="resume-field">
+              <label>Language 1 + Level</label>
+              <input type="text" id="r-lang1" placeholder="e.g. Kazakh — Native">
+            </div>
+            <div class="resume-field">
+              <label>Language 2 + Level</label>
+              <input type="text" id="r-lang2" placeholder="e.g. English — B2">
+            </div>
+          </div>
+
+          <div class="resume-section-title">🏆 Achievements / Hobbies</div>
+          <textarea id="r-achievements" class="resume-textarea" placeholder="e.g. Winner of regional English Olympiad 2024. I enjoy reading, playing chess, and volunteering at community events..."></textarea>
+
+          <div class="resume-section-title why-section">❓ Why Should the Company Hire You?</div>
+          <div class="why-box">
+            <p>This is the most important question! Write 3–5 sentences explaining:</p>
+            <ul>
+              <li>What makes you unique?</li>
+              <li>What value will you bring to the company?</li>
+              <li>How do your skills match the job?</li>
+            </ul>
+          </div>
+          <textarea id="r-why" class="essay-box" placeholder="e.g. The company should hire me because I am a dedicated and hardworking individual who is passionate about this field. I bring strong communication skills and the ability to work under pressure. Furthermore, I am a fast learner who is always looking to improve..."></textarea>
+          <div class="word-count" id="r-why-wc">Words: 0</div>
+        </div>
+
+        <div class="essay-meta-row">
+          <input type="text" id="w5l2-student-name" placeholder="Your name (confirmation)" class="name-input">
+        </div>
+        <button class="btn-submit" onclick="submitResume()">📤 Submit Resume</button>
+        <div id="w5l2-submit-msg" class="submit-msg"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
